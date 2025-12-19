@@ -2,11 +2,11 @@ from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__, static_folder='.', template_folder='.')
 
-# Routes for each page
 @app.route("/")
 def home():
     return render_template("index.html")
 
+# Example other routes
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -23,10 +23,7 @@ def housing():
 def contact():
     return render_template("contact.html")
 
-# Serve static files (CSS, JS, images)
+# Serve static files
 @app.route("/<path:filename>")
 def static_files(filename):
     return send_from_directory('.', filename)
-
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
