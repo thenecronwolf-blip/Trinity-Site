@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Trinity Care Services</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER / NAV (same as index.html) -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Main menu" class="nav">
+      <img
+        src="images/logo.png"
+        alt="Trinity Care Services logo featuring a cross and dove symbolizing faith, renewal, and hope"
+        class="logo"
+      >
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="housing-insurance.html">Housing & Insurance</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li>
+          <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero fade-in" aria-labelledby="contact-title">
+      <h1 id="contact-title">Contact Us</h1>
+      <p class="page-subtitle">
+        Whether you are seeking help for yourself or a loved one, we are here to listen.
+      </p>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="content-section fade-in" aria-labelledby="form-title">
+      <h2 id="form-title">Request Support</h2>
+      <p>
+        Complete the form below and a member of our team will follow up with you.
+        You are not committing to services by reaching out.
+      </p>
+
+      <form class="contact-form" aria-label="Contact and intake request form">
+
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            autocomplete="name"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="message">How can we help?</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="cta-button">
+          Send Message
+        </button>
+
+        <p class="form-note">
+          Please do not include sensitive medical or emergency information in this form.
+          If this is an emergency, call 911 or your local emergency number.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (same as index.html) -->
+  <footer role="contentinfo" class="footer">
+    <div class="footer-content">
+      <img
+        src="images/logo.png"
+        alt="Trinity Care Services logo"
+        class="footer-logo"
+      >
+
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="housing-insurance.html">Housing & Insurance</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer-contact">
+        Email:
+        <a href="mailto:info@trinitycareservice.com">info@trinitycareservice.com</a>
+        · Phone: (XXX) XXX-XXXX
+      </p>
+
+      <p class="copyright">
+        &copy; 2025 Trinity Care Services. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
