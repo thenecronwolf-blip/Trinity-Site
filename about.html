@@ -5,51 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trinity Care Services - About Us</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
 </head>
 <body>
+
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <header role="banner">
-<nav role="navigation" aria-label="Main menu">
-<img src="/images/logo.png" alt="Trinity Care Services logo" class="logo">
-<ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About Us</a></li>
-  <li><a href="/services">Services</a></li>
-  <li><a href="/housing-insurance">Housing & Insurance</a></li>
-  <li><a href="/contact">Contact</a></li>
-</ul>
-</nav>
+  <nav role="navigation" aria-label="Main menu">
+    <img src="/images/logo.png" alt="Trinity Care Services logo" class="logo">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html" aria-current="page">About Us</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/housing-insurance.html">Housing & Insurance</a></li>
+      <li><a href="/staff.html">Staff</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main id="main-content" role="main">
-<section class="hero" aria-labelledby="hero-title">
-<h1 id="hero-title">About Trinity Care Services</h1>
-<p>We are dedicated to recovery health, helping families heal through compassionate support.</p>
-</section>
+<main id="main-content" style="margin-top:80px; max-width:1000px; margin-left:auto; margin-right:auto; padding:2rem 1rem;">
 
-<section class="intro" aria-labelledby="intro-title">
-<h2 id="intro-title">Our Mission</h2>
-<p>Trinity Care Services is committed to the wellness of individuals, families, and communities through prevention, intervention, treatment, and education.</p>
-</section>
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="about-hero-title">
+    <h1 id="about-hero-title">About Trinity Care Services</h1>
+    <p>Empowering individuals, supporting families, and strengthening communities through compassionate care and evidence-based programs.</p>
+  </section>
 
-<section class="timeline" aria-labelledby="timeline-title">
-<h2 id="timeline-title">Our Journey</h2>
-<ul>
-  <li><strong>2010:</strong> Founded to provide behavioral health support</li>
-  <li><strong>2015:</strong> Expanded services to include housing & insurance assistance</li>
-  <li><strong>2020:</strong> Launched community education programs</li>
-</ul>
-</section>
+  <!-- Our Mission -->
+  <section aria-labelledby="mission-title">
+    <h2 id="mission-title">Our Mission</h2>
+    <p>At Trinity Care Services, our mission is to provide holistic, client-centered care to individuals battling substance use and behavioral health challenges. We believe that with the right support, every individual has the capacity to heal, grow, and thrive.</p>
+    <img src="/images/mission.jpg" alt="Team helping clients" style="width:100%; border-radius:10px; margin-top:1rem;">
+  </section>
+
+  <!-- Our History -->
+  <section aria-labelledby="history-title">
+    <h2 id="history-title">Our History</h2>
+    <p>Founded in 2019 by Marvina Thomas, a former registered nurse with over two decades of experience in health and community service, Trinity Care Services was born from a vision of compassionate care. Over the years, we have expanded to provide comprehensive behavioral health counseling, pre-job training, and housing support for those who need it most.</p>
+    <p>Marvina’s previous work with Start Living Inc., assisting homeless populations since 2003, laid the foundation for our commitment to dignity, respect, and recovery.</p>
+  </section>
+
+  <!-- Milestones Timeline -->
+  <section aria-labelledby="timeline-title">
+    <h2 id="timeline-title">Our Milestones</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2003</div>
+        <div class="timeline-content">
+          <h3>Start Living Inc. Founded</h3>
+          <p>Marvina begins assisting homeless populations in Phoenix, providing housing and support programs.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2019</div>
+        <div class="timeline-content">
+          <h3>Trinity Care Services Founded</h3>
+          <p>Trinity Care Services opens its doors, expanding support to individuals battling substance abuse.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <div class="timeline-content">
+          <h3>First Behavioral Health Program Launched</h3>
+          <p>Introduced structured counseling sessions and LifeSkills programs for clients in recovery.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-content">
+          <h3>Medical Staff Expansion</h3>
+          <p>Added additional medical and clinical staff to increase program capacity and specialized care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section aria-labelledby="values-title">
+    <h2 id="values-title">Our Core Values</h2>
+    <ul style="list-style: disc; margin-left:2rem; margin-top:1rem;">
+      <li><strong>Compassion:</strong> Every individual is treated with respect and care.</li>
+      <li><strong>Integrity:</strong> We uphold ethical and transparent practices in all we do.</li>
+      <li><strong>Collaboration:</strong> We work together with clients, families, and communities to achieve lasting change.</li>
+      <li><strong>Excellence:</strong> We deliver high-quality programs rooted in evidence-based practices.</li>
+    </ul>
+  </section>
+
+  <!-- Meet Our Team CTA -->
+  <section style="text-align:center; margin-top:3rem;">
+    <h2>Meet Our Dedicated Team</h2>
+    <p>Our team of medical, clinical, and support professionals is here to guide you every step of the way.</p>
+    <a href="/staff.html" class="cta secondary" aria-label="Meet the Trinity Care Services staff">Meet Our Staff</a>
+  </section>
+
 </main>
 
 <footer role="contentinfo">
-<p>&copy; 2025 Trinity Care Services. All rights reserved.</p>
-<div class="social">
-<a href="#"><img src="/images/facebook.png" alt="Facebook" width="30"></a>
-<a href="#"><img src="/images/linkedin.png" alt="LinkedIn" width="30"></a>
-</div>
+  <nav aria-label="Footer navigation">
+    <a href="/">Home</a> |
+    <a href="/staff.html">Staff</a> |
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2025 Trinity Care Services. All rights reserved.</p>
+  <div class="social">
+    <a href="#" aria-label="Facebook"><img src="/images/facebook.png" alt="" width="30"></a>
+    <a href="#" aria-label="LinkedIn"><img src="/images/linkedin.png" alt="" width="30"></a>
+  </div>
 </footer>
+
 </body>
 </html>
