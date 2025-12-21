@@ -1,139 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Housing & Insurance | Trinity Care Services</title>
-
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinity Care Services - Housing & Insurance</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- HEADER / NAV (same as index.html) -->
-  <header role="banner">
-    <nav role="navigation" aria-label="Main menu" class="nav">
-      <img
-        src="images/logo.png"
-        alt="Trinity Care Services logo featuring a cross and dove symbolizing faith, renewal, and hope"
-        class="logo"
-      >
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="housing-insurance.html" aria-current="page">Housing & Insurance</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li>
-          <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<header role="banner">
+<nav role="navigation" aria-label="Main menu">
+  <img src="/images/logo.png" alt="Trinity Care Services logo" class="logo">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About Us</a></li>
+    <li><a href="/services.html">Services</a></li>
+    <li><a href="/housing-insurance.html" aria-current="page">Housing & Insurance</a></li>
+    <li><a href="/staff.html">Staff</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
 
-  <main id="main-content" role="main">
+<main id="main-content" style="margin-top:80px; max-width:1000px; margin-left:auto; margin-right:auto; padding:2rem 1rem;">
 
-    <!-- PAGE HERO -->
-    <section class="page-hero fade-in" aria-labelledby="hi-title">
-      <h1 id="hi-title">Housing & Insurance</h1>
-      <p class="page-subtitle">
-        Helping remove barriers to care by supporting access to coverage and stable housing.
-      </p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">Housing & Insurance Support</h1>
+    <p>Providing safe, stable housing and access to the right medical coverage for every client.</p>
+  </section>
 
-    <!-- INSURANCE -->
-    <section class="content-section fade-in" aria-labelledby="insurance-title">
-      <h2 id="insurance-title">Accepted Insurance Plans</h2>
-      <p>
-        Trinity Care Services works with a variety of insurance providers.
-        If you are unsure about your coverage, our team can help guide you.
-      </p>
-
-      <ul class="insurance-list">
-        <li>American Indian Health Plan</li>
-        <li>Mercy Care</li>
-        <li>Blue Cross Blue Shield (BCBS)</li>
-      </ul>
-
-      <p class="note">
-        Coverage and eligibility may vary by program. Please contact us to confirm details.
-      </p>
-    </section>
-
-    <!-- HOUSING -->
-    <section class="content-section fade-in" aria-labelledby="housing-title">
-      <h2 id="housing-title">Housing Support</h2>
-      <p>
-        Stable housing is a key part of recovery. Trinity Care Services
-        collaborates with trusted community partners to help individuals
-        access safe and supportive housing options.
-      </p>
-
-      <p>
-        Housing services are provided in partnership with:
-      </p>
-
-      <p class="partner-link">
-        <a
-          href="http://startlivinginc.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Start Living Inc
-        </a>
-      </p>
-
-      <p class="note">
-        Housing availability is subject to partner criteria and availability.
-      </p>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta fade-in" aria-labelledby="hi-cta-title">
-      <h2 id="hi-cta-title">Questions About Coverage or Housing?</h2>
-      <p>
-        We are here to help you understand your options and next steps.
-      </p>
-      <a href="contact.html" class="cta-button">
-        Contact Our Team
-      </a>
-    </section>
-
-  </main>
-
-  <!-- FOOTER (same as index.html) -->
-  <footer role="contentinfo" class="footer">
-    <div class="footer-content">
-      <img
-        src="images/logo.png"
-        alt="Trinity Care Services logo"
-        class="footer-logo"
-      >
-
-      <nav aria-label="Footer navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="housing-insurance.html">Housing & Insurance</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <p class="footer-contact">
-        Contact:
-        <a href="mailto:info@trinitycareservice.com">info@trinitycareservice.com</a>
-        · (XXX) XXX-XXXX
-      </p>
-
-      <p class="copyright">
-        &copy; 2025 Trinity Care Services. All rights reserved.
-      </p>
+  <!-- Housing Section -->
+  <section aria-labelledby="housing-title" class="animated-section">
+    <h2 id="housing-title">Safe and Supportive Housing</h2>
+    <p>We partner with local housing programs and shelters to provide temporary and long-term housing solutions for clients in recovery. Our goal is to ensure a safe environment conducive to healing and personal growth.</p>
+    <div class="housing-cards">
+      <div class="card hover-scale">
+        <img src="/images/mission.jpg" alt="Group home">
+        <h3>Group Homes</h3>
+        <p>Structured living with support staff on-site to assist with recovery and daily life skills.</p>
+      </div>
+      <div class="card hover-scale">
+        <img src="/images/mission.jpg" alt="Transitional housing">
+        <h3>Transitional Housing</h3>
+        <p>Short-term housing to bridge the gap between treatment and independent living.</p>
+      </div>
+      <div class="card hover-scale">
+        <img src="/images/mission.jpg" alt="Permanent housing">
+        <h3>Permanent Housing Support</h3>
+        <p>Guidance on finding long-term housing and navigating rental agreements.</p>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <!-- Insurance Section -->
+  <section aria-labelledby="insurance-title" class="animated-section">
+    <h2 id="insurance-title">Insurance Navigation</h2>
+    <p>Understanding insurance options can be overwhelming. Trinity Care Services helps clients navigate Medicaid, private insurance, and other programs to ensure access to vital behavioral health services.</p>
+    <div class="insurance-grid">
+      <div class="card hover-scale">
+        <h3>Medicaid Assistance</h3>
+        <p>Enroll and maintain Medicaid benefits with our guidance, ensuring coverage for treatment programs.</p>
+      </div>
+      <div class="card hover-scale">
+        <h3>Private Insurance Support</h3>
+        <p>We help clients maximize private insurance coverage for therapy, counseling, and medical care.</p>
+      </div>
+      <div class="card hover-scale">
+        <h3>Financial Counseling</h3>
+        <p>Personalized sessions to help clients understand costs, coverage, and options for care.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="text-align:center; margin-top:3rem;">
+    <h2>Need Assistance?</h2>
+    <p>Our team is ready to guide you through housing and insurance processes.</p>
+    <a href="/contact.html" class="cta" aria-label="Contact Trinity for support">Contact Us</a>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <nav aria-label="Footer navigation" style="margin-bottom:0.5rem;">
+    <a href="/">Home</a> |
+    <a href="/about.html">About Us</a> |
+    <a href="/staff.html">Staff</a> |
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2025 Trinity Care Services. All rights reserved.</p>
+  <div class="social" style="margin-top:0.5rem;">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="/images/facebook.png" alt="Facebook" width="30">
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <img src="/images/linkedin.png" alt="LinkedIn" width="30">
+    </a>
+  </div>
+</footer>
 
 </body>
 </html>
