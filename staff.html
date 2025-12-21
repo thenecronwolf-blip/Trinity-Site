@@ -1,161 +1,108 @@
-<section
-  class="bg-blue-900 text-white py-16 px-6"
-  aria-labelledby="meet-our-staff-heading"
->
-  <div class="max-w-6xl mx-auto">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinity Care Services - Staff</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Section Heading -->
-    <h2
-      id="meet-our-staff-heading"
-      class="text-4xl font-bold mb-12 text-center uppercase tracking-widest"
-    >
-      Meet Our Staff
-    </h2>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Core Staff Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <!-- Header / Navigation -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Main menu">
+      <img src="/images/logo.png" alt="Trinity Care Services logo" class="logo">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/housing-insurance.html">Housing & Insurance</a></li>
+        <li><a href="/staff.html" aria-current="page">Staff</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <!-- Marvina Thomas -->
-      <div class="flex flex-col space-y-4 transition-transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-800/30">
-        <div class="aspect-[4/5] bg-gray-300 overflow-hidden rounded-lg">
-          <img
-            src="/images/staff/marvina-thomas.jpg"
-            alt="Marvina Thomas, Founder and Owner of Trinity Care Services"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
+  <main id="main-content" style="margin-top: 80px; max-width: 1000px; margin-left:auto; margin-right:auto; padding:2rem 1rem;">
+
+    <section aria-labelledby="staff-title">
+      <h1 id="staff-title" style="text-align:center; margin-bottom:2rem;">Meet Our Staff</h1>
+
+      <div class="staff-grid">
+
+        <!-- Marvina Thomas -->
+        <div class="staff-card">
+          <img src="/images/staff/marvina-thomas.jpg" alt="Marvina Thomas">
+          <h3>Marvina Thomas, BA</h3>
+          <p><em>Founder and Owner</em></p>
+          <p>A former registered nurse, Marvina is the Founder and Owner of Trinity Care Services. She moved to the Phoenix area 25 years ago and began her mission in being a ministry of health. Marvina has been helping the homeless via her group homes, Start Living Inc., since 2003 and opened Trinity Care Services in 2019 to further help those battling substance abuse.</p>
+          <a href="mailto:marvina@trinitycareservice.com" class="cta secondary" style="margin-top:1rem;">Contact Marvina</a>
         </div>
-        <div>
-          <h3 class="text-2xl font-semibold uppercase">
-            Marvina Thomas, BA
-          </h3>
-          <p class="text-xl italic mb-4">
-            Founder and Owner
-          </p>
-          <p class="leading-relaxed text-blue-100">
-            A former registered nurse, Marvina is the Founder and Owner of
-            Trinity Care Services. She moved to the Phoenix area over 25 years
-            ago and began her mission as a ministry of health. Marvina has
-            supported individuals experiencing homelessness through her group
-            homes, Start Living Inc., since 2003, and founded Trinity Care
-            Services in 2019 to further serve those battling substance abuse.
-          </p>
 
-          <a
-            href="mailto:marvina@trinitycareservice.com"
-            class="inline-block mt-4 border border-white px-6 py-2 uppercase text-sm tracking-widest transition-colors hover:bg-white hover:text-blue-900"
-          >
-            — Contact Marvina —
-          </a>
+        <!-- Marcia Chowdhury -->
+        <div class="staff-card">
+          <img src="/images/staff/marcia-chowdhury.jpg" alt="Marcia Chowdhury">
+          <h3>Marcia Chowdhury, MSAC</h3>
+          <p><em>Master Level Clinician</em></p>
+          <p>Ms. Chowdhury obtained her Master’s and Bachelor's Degrees in Addiction Counseling from Ottawa University. As the Clinical Supervisor, she is responsible for the oversight of counselors and case managers, ensuring the development and implementation of effective treatment plans.</p>
+        </div>
+
+        <!-- Errol Horn -->
+        <div class="staff-card">
+          <img src="/images/staff/errol-horn.jpg" alt="Errol Horn">
+          <h3>Errol Horn, BA</h3>
+          <p><em>Facilitator</em></p>
+          <p>Errol is the facilitator of LifeSkills at Trinity. With over 15 years of experience in behavioral health and recovery, he incorporates cognitive psychology into his sessions. He majored in Psychology at Alabama A&M University and is currently working on a non-fiction novel regarding life experiences and trauma.</p>
+        </div>
+
+        <!-- Ashley Coleman -->
+        <div class="staff-card">
+          <img src="/images/staff/ashley-coleman.jpg" alt="Ashley Coleman">
+          <h3>Ashley Coleman, BSN, RN</h3>
+          <p><em>Registered Nurse</em></p>
+          <p>An Arizona native and proud military wife, Ashley is a Registered Nurse at Trinity Care Services. Her medical career began in caring for medically fragile adults and hospice clients before she transitioned into cardiac and mother-baby nursing. She is passionate about integrating mental health services into her medical practice.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Optional Medical Staff Section -->
+    <section aria-labelledby="medical-title" style="margin-top:3rem;">
+      <h2 id="medical-title" style="text-align:center; margin-bottom:1.5rem;">Medical / Clinical Staff</h2>
+      <div class="staff-grid">
+        <div class="staff-card">
+          <h3>Joseph Franzetti, MD</h3>
+          <p>Bio Pending</p>
+        </div>
+        <div class="staff-card">
+          <h3>Kristin Lovato, LPC</h3>
+          <p>Clinical Supervisor</p>
         </div>
       </div>
+    </section>
 
-      <!-- Marcia Chowdhury -->
-      <div class="flex flex-col space-y-4 transition-transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-800/30">
-        <div class="aspect-[4/5] bg-gray-300 overflow-hidden rounded-lg">
-          <img
-            src="/images/staff/marcia-chowdhury.jpg"
-            alt="Marcia Chowdhury, Master Level Clinician at Trinity Care Services"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div>
-          <h3 class="text-2xl font-semibold uppercase">
-            Marcia Chowdhury, MSAC
-          </h3>
-          <p class="text-xl italic mb-4">
-            Master Level Clinician
-          </p>
-          <p class="leading-relaxed text-blue-100">
-            Ms. Chowdhury obtained both her Master’s and Bachelor’s degrees in
-            Addiction Counseling from Ottawa University. As a Clinical Supervisor,
-            she oversees counselors and case managers, ensuring the development
-            and implementation of individualized, effective treatment plans
-            rooted in best practices.
-          </p>
-        </div>
-      </div>
-
-      <!-- Errol Horn -->
-      <div class="flex flex-col space-y-4 transition-transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-800/30">
-        <div class="aspect-[4/5] bg-gray-300 overflow-hidden rounded-lg">
-          <img
-            src="/images/staff/errol-horn.jpg"
-            alt="Errol Horn, LifeSkills Facilitator at Trinity Care Services"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div>
-          <h3 class="text-2xl font-semibold uppercase">
-            Errol Horn, BA
-          </h3>
-          <p class="text-xl italic mb-4">
-            Facilitator
-          </p>
-          <p class="leading-relaxed text-blue-100">
-            Errol is the LifeSkills Facilitator at Trinity Care Services, bringing
-            over 15 years of experience in behavioral health and recovery. He
-            incorporates principles of cognitive psychology into his sessions
-            and holds a degree in Psychology from Alabama A&M University. Errol
-            is currently working on a non-fiction book focused on life experience,
-            trauma, and personal growth.
-          </p>
-        </div>
-      </div>
-
-      <!-- Ashley Coleman -->
-      <div class="flex flex-col space-y-4 transition-transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-800/30">
-        <div class="aspect-[4/5] bg-gray-300 overflow-hidden rounded-lg">
-          <img
-            src="/images/staff/ashley-coleman.jpg"
-            alt="Ashley Coleman, Registered Nurse at Trinity Care Services"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div>
-          <h3 class="text-2xl font-semibold uppercase">
-            Ashley Coleman, BSN, RN
-          </h3>
-          <p class="text-xl italic mb-4">
-            Registered Nurse
-          </p>
-          <p class="leading-relaxed text-blue-100">
-            An Arizona native and proud military spouse, Ashley is a Registered
-            Nurse at Trinity Care Services. Her background includes caring for
-            medically fragile adults and hospice patients, as well as experience
-            in cardiac and mother-baby nursing. She is deeply committed to
-            integrating mental health services into comprehensive medical care.
-          </p>
-        </div>
-      </div>
-
+    <!-- Bottom CTA -->
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="/contact.html" class="cta">Start Your Healing Journey</a>
     </div>
 
-    <!-- Medical / Clinical Staff -->
-    <div class="mt-16 pt-8 border-t border-blue-700 text-center">
-      <h4 class="text-xl font-semibold uppercase mb-4 tracking-widest">
-        Medical / Clinical Staff
-      </h4>
+  </main>
 
-      <div class="flex flex-wrap justify-center gap-12 text-blue-200">
-        <div>
-          <p class="font-bold">Joseph Franzetti, MD</p>
-          <p class="text-sm italic">
-            Medical Director — full biography coming soon.
-          </p>
-        </div>
-
-        <div>
-          <p class="font-bold">Kristin Lovato, LPC</p>
-          <p class="text-sm">
-            Clinical Supervisor
-          </p>
-        </div>
-      </div>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <nav aria-label="Footer navigation">
+      <a href="/">Home</a> |
+      <a href="/staff.html">Staff</a> |
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2025 Trinity Care Services. All rights reserved.</p>
+    <div class="social">
+      <a href="#" aria-label="Facebook"><img src="/images/facebook.png" alt="" width="30"></a>
+      <a href="#" aria-label="LinkedIn"><img src="/images/linkedin.png" alt="" width="30"></a>
     </div>
+  </footer>
 
-  </div>
-</section>
+</body>
+</html>
