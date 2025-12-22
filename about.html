@@ -5,6 +5,117 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trinity Care Services - About Us</title>
 <link rel="stylesheet" href="style.css">
+<style>
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #6c63ff;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 1rem 2rem;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #6c63ff;
+  border-radius: 50%;
+  top: 1rem;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd)::after {
+  right: -8px;
+}
+
+.timeline-item:nth-child(even)::after {
+  left: -8px;
+}
+
+.timeline-year {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.staff-photos {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.staff-photos img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #6c63ff;
+  transition: transform 0.3s;
+}
+
+.staff-photos img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0 !important;
+    width: 100%;
+    text-align: left !important;
+    padding: 1rem 1rem;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item::after {
+    left: 12px !important;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -65,17 +176,28 @@
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-year">2021</div>
+        <div class="timeline-year">2023</div>
         <div class="timeline-content">
-          <h3>First Behavioral Health Program Launched</h3>
-          <p>Introduced structured counseling sessions and LifeSkills programs for clients in recovery.</p>
+          <h3>MAT Program Launched</h3>
+          <p>Introduction of the Medication-Assisted Treatment (MAT) program to provide evidence-based care for clients in recovery.</p>
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-year">2023</div>
+        <div class="timeline-year">2025</div>
         <div class="timeline-content">
-          <h3>Medical Staff Expansion</h3>
-          <p>Added additional medical and clinical staff to increase program capacity and specialized care.</p>
+          <h3>CARF Accredited</h3>
+          <p>Trinity Care Services achieves CARF accreditation, demonstrating commitment to quality and excellence in care.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-content">
+          <h3>Phoenix Location: Trinity Care Service</h3>
+          <p>New Phoenix location opened to expand services and reach more clients.</p>
+          <div class="staff-photos">
+            <!-- Add staff photos here -->
+            <!-- <img src="images/staff1.jpg" alt="Staff Name"> -->
+          </div>
         </div>
       </div>
     </div>
