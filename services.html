@@ -5,73 +5,159 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trinity Care Services - Services</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* Services Grid */
+.services-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.services-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr; /* default: one column */
+}
+
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service-card p {
+  margin: 0.5rem 0 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.service-card .btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #6c63ff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.service-card .btn:hover {
+  background: #554ed2;
+}
+</style>
 </head>
 <body>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
-
-<header role="banner">
-<nav role="navigation" aria-label="Main menu">
-  <img src="/images/logo.png" alt="Trinity Care Services logo" class="logo">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about.html">About Us</a></li>
-    <li><a href="/services.html" aria-current="page">Services</a></li>
-    <li><a href="/housing-insurance.html">Housing & Insurance</a></li>
-    <li><a href="/staff.html">Staff</a></li>
-    <li><a href="/contact.html">Contact</a></li>
-  </ul>
-</nav>
+<header>
+  <nav role="navigation" aria-label="Main menu">
+    <img src="/images/logo.png" alt="Trinity Care Services logo" class="logo">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/services.html" aria-current="page">Services</a></li>
+      <li><a href="/housing-insurance.html">Housing & Insurance</a></li>
+      <li><a href="/staff.html">Staff</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main id="main-content" style="margin-top:80px; max-width:1000px; margin-left:auto; margin-right:auto; padding:2rem 1rem;">
+<main class="services-section">
+  <h1>Our Services</h1>
+  
+  <div class="services-grid">
 
-  <!-- Hero Section -->
-  <section class="hero" aria-labelledby="hero-title">
-    <h1 id="hero-title">Our Services</h1>
-    <p>Comprehensive behavioral health, skills development, and supportive programs for lasting recovery.</p>
-  </section>
-
-  <!-- Services Grid -->
-  <section aria-labelledby="services-title" class="animated-section">
-    <h2 id="services-title">Key Programs</h2>
-    <div class="services-grid">
-      <div class="card hover-scale">
-        <img src="/images/mission.jpg" alt="Addiction counseling">
-        <h3>Addiction & Behavioral Health Counseling</h3>
-        <p>Personalized counseling sessions addressing substance abuse and mental health challenges.</p>
-      </div>
-      <div class="card hover-scale">
-        <img src="/images/mission.jpg" alt="Life skills">
-        <h3>LifeSkills & Pre-Job Training</h3>
-        <p>Develop essential life and career skills for independent living and employment readiness.</p>
-      </div>
-      <div class="card hover-scale">
-        <img src="/images/mission.jpg" alt="Community support">
-        <h3>Community & Family Support</h3>
-        <p>Workshops and support groups to strengthen families and community connections.</p>
-      </div>
-      <div class="card hover-scale">
-        <img src="/images/mission.jpg" alt="Medical integration">
-        <h3>Medical & Nursing Integration</h3>
-        <p>Seamless care with registered nurses and clinical staff collaborating on treatment plans.</p>
-      </div>
+    <div class="service-card">
+      <img src="/images/service1.jpg" alt="Behavioral Health Counseling">
+      <h3>Behavioral Health Counseling</h3>
+      <p>Compassionate, evidence‑based therapeutic support for individuals and families.</p>
+      <a href="#" class="btn">Learn More</a>
     </div>
-  </section>
 
-  <!-- CTA Section -->
-  <section style="text-align:center; margin-top:3rem;">
-    <h2>Ready to Get Started?</h2>
-    <p>Contact Trinity Care Services today to learn which programs are right for you.</p>
-    <a href="/contact.html" class="cta" aria-label="Contact Trinity Care Services">Contact Us</a>
-  </section>
+    <div class="service-card">
+      <img src="/images/service2.jpg" alt="Medication-Assisted Treatment">
+      <h3>Medication‑Assisted Treatment (MAT)</h3>
+      <p>Combining medication and counseling to support long‑term recovery.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
 
+    <div class="service-card">
+      <img src="/images/service3.jpg" alt="Pre‑Job Training">
+      <h3>Pre‑Job Training</h3>
+      <p>Preparing clients with essential skills and confidence for employment.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <img src="/images/service4.jpg" alt="Housing Support">
+      <h3>Housing Support</h3>
+      <p>Assistance with finding stable housing and ongoing resources.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <img src="/images/service5.jpg" alt="LifeSkills Programs">
+      <h3>LifeSkills Programs</h3>
+      <p>Workshops and training designed to build daily living and interpersonal skills.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="service-card">
+      <img src="/images/service6.jpg" alt="Case Management">
+      <h3>Case Management</h3>
+      <p>Coordinated care plans that help clients access resources and services.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+  </div>
 </main>
 
-<footer role="contentinfo">
+<footer role="contentinfo" style="padding:2rem 1rem; text-align:center; background:#f8f8f8; margin-top:3rem;">
   <nav aria-label="Footer navigation" style="margin-bottom:0.5rem;">
     <a href="/">Home</a> |
-    <a href="/about.html">About Us</a> |
     <a href="/staff.html">Staff</a> |
     <a href="/contact.html">Contact</a>
   </nav>
